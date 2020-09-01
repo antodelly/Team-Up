@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'holyfatregular';
+    src: url('../assets/fonts/holyfat-webfont.woff2') format('woff2'),
+         url('../assets/fonts/holyfat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search {
+ 	width: 100%;
+    display: flex;
+    flex-direction: row;
+	position: relative;
+    margin: auto;
+    padding: 40px 100px;
+    font-size: 20px;
+}
+
+form {
+	width: 100%;
+    display: flex;
+}
+
+.left {
+	width: 65%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.3);
+    border-radius: 8px 0 0 8px;
+}
+
+.left .title {
+	text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    color: rgb(45,108,180);
+    font-family: 'holyfatregular', sans-serif;
+    text-shadow: 1px 1px 1px white;
+}
+
+.search-input {
+	width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    font-size: 24px;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.name {
+	display: initial;
+    height: 100%;
+}
+#projectname{
+	font-size: 20px;
+}
+
+.select-input {
+	display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+
+.select-input select{
+	font-size: 18px;
+}
+
+.right {
+	width: 35%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.3);
+    border-radius: 0 8px 8px 0;
+}
+
+.right .title {
+	text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    color: rgb(45,108,180);
+    font-family: 'holyfatregular', sans-serif;
+    text-shadow: 1px 1px 1px white;
+}
+
+.radio-btn {
+	padding: 10px 20px;
+}
+
+.status {
+	display: initial;
+}
+
+.radio-btn input[type='radio']{
+	cursor: pointer;
+}
+
+.searched {
+	margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 300;
+    color: white;
+    font-family: 'holyfatregular', sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.results {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noresults {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+}
+
+.single {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    background: rgba(255,255,255,0.3);
+    width: 80%;
+    height: 60px;
+}
+
+.output {
+	padding: 5px 10px;
+    font-size: 20px;
+}
+
+
+.output a {
+	color: black;
+}
+
+.output span {
+	font-size: 24px;
+    color: black;
+}
+.output span:hover{
+	font-size: 30px;
+    transition: 0.5s;
+}
+
+
+.btn-conf input{
+	display: initial;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+   	background: rgb(45,108,180);
+}
+.btn-conf .invio{
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+	
+    .search {
+    	padding: 30px 20px;
+    }
+	
+	.left {
+		width: 55%;
+	}
+    .right{
+    	width: 45%;
+    }
+    .search-input {
+    	display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #projectname{
+    	margin-top: 10px;
+        height: 45px;
+	}
+}
+
+@media (max-width: 767px){
+	#projectname{
+    	width: 200px;
+    }
+    
+    .single {
+    width: 80%;
+		display: flex;
+        flex-direction: column;
+    	justify-content: space-between;
+    	align-items: center;
+        height: auto;
+        margin-bottom: 5px;
+        border-radius: 2px;
+}
+
+}
+
+.border{
+	padding: 2px;
+	background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #68a5ed 34%);
+	background-size: 400% 400%;
+	background-position: 25% 50%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+}
+.inner-cutout{
+	padding: 40px 0;
+	display: block;
+	background-color:#fff;	
+	margin: 1%;
+	padding-bottom: 40px;
+	background: rgba(0,0,0,1);
+	 background-size: 300%;
+	background-position:50% 50%;
+
+}
+.knockout {
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'holyfatregular', sans-serif;
+	font-size: 60px;
+    font-weight: 300;
+	background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #68a5ed 34%);
+	background-size: 400%;
+	 -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.knockout{
+		animation: Gradient 5s ease infinite;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 30% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 30% 50%
+	}
+	
+}
+
+.main{
+	width: 450px;
+}
+

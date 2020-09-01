@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../assets/fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hide {
+  padding: 0 150px;
+  color: white;
+  text-align: center;
+  font-family: 'bebas_neueregular', sans-serif;
+  -webkit-animation: cssAnimation 10s infinite;
+  animation: cssAnimation 10s infinite;
+}
+
+@media (max-width: 767px){
+	.hide {
+    	padding: 30px;
+    }
+}
+
+@keyframes cssAnimation {
+  0% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  height: 470px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 1) !important;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+}
+
+.card-header:first-child {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50px;
+  border: none;
+}
+
+.card-header img {
+  max-width: 170px;
+  display: inline-block;
+  margin-left: 280px;
+  margin-top: -80px;
+}
+
+.card-header {
+  color: rgba(255, 255, 255, 1);
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.card-header h3 {
+  color: rgb(45, 108, 180);
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: auto;
+  text-align: left;
+  font-size: 30px;
+}
+
+.card-body {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card-footer {
+  font-size: 20px;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: rgb(45, 108, 180);
+  color: white;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn {
+  margin-top: 30px;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(45, 108, 180);
+  width: 150px;
+}
+
+.login_btn:hover {
+  transition: 0.5s;
+  background-color: rgb(14, 154, 215);
+}
+
+.links {
+  color: black;
+}
+
+.links a {
+  margin-left: 4px;
+}
+
+a {
+  color: rgb(45, 108, 180);
+}
+
+.input-group {
+  padding-top: 10px;
+  border: 5px black;
+}
+
+.form-control {
+  border: 1px solid rgb(45, 108, 180);
+}

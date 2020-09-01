@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'holyfatregular';
+    src: url('../assets/fonts/holyfat-webfont.woff2') format('woff2'),
+         url('../assets/fonts/holyfat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0; 
+    border:0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #3c3939;
+    background-color: rgb(254,232,180);
+}
+
+.row{
+	margin-bottom: 30px;
+    display: flex;
+    justify-content: center;   
+}
+
+.row_progetti {
+	display: flex;
+    flex-direction: row;
+}
+
+.contenuto{
+	width: 100%;
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    padding: 30px;
+}
+
+/* destra */
+.card{
+	background: white;
+    border-radius: 50px;
+    border: 2px solid rgb(45,108,180);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.9);
+    margin-top: 15px;
+}
+
+.card-body{
+	padding: 0;
+}
+
+.card-body--{
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    background: rgba(24,22,22,0.1);
+}
+
+.box-title{
+	padding: 10px;
+    margin: 0;
+	text-align: center;
+    font-family: 'holyfatregular';
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(14,154,215);
+}
+
+.table {
+	margin: 0;
+}
+
+.table th{
+	font-family: 'holyfatregular';
+    font-size: 30px;
+    font-weight: 400;
+    border: 0;
+    color: rgb(45,108,180);
+    width: 200px;
+    text-align: center;
+}
+
+.table thead th {
+	border: 0;
+}
+
+.table td.campi{
+    text-align: center;
+}
+
+.table td.campi a{
+	color: black;
+}
+
+
+.col-lg-4 {
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  border: 2px solid rgb(45,108,180);
+  background: white;
+  min-height: 150px;
+  max-width: 370px;
+  max-height: 160px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.9);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.9);
+  }
+
+.col-4{
+	float: center;
+}
+
+.col-8{
+	float: center;
+}
+
+
+.card-img{
+	position: relative;
+    margin-top: 20%;
+}
+
+.card-img svg{
+	position: relative;
+    color: green;
+    font-size: 50px;
+    top: 30%;
+    margin-left: 10px;
+}
+
+.content{
+	height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content p{
+	margin: 0;
+    font-size: 35px;
+}
+
+.content p span{
+	margin: 0;
+	font-family: 'holyfatregular';
+    color: rgb(45,108,180);
+    font-size:40px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+p.number{
+	margin-left: 30%;
+}

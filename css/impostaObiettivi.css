@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*, *:before, *:after {
+	margin: 0;
+    padding: 0;
+}
+
+
+body {
+	background: linear-gradient(to left, #412722, #8a4e37);
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.box{
+	position: relative;
+    margin: auto;
+    padding-top: 100px;
+	width: 700px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .label{
+	font-size: 26px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    
+}
+
+.box .col{
+	display: flex;
+    height: 45px;
+    padding: 5px;
+    margin: 15px 0;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.box .input-o{
+	width: 400px;
+    border: 1px solid rgb(45,108,180);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.box .input-o:hover{
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.6);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.6);
+	box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.6);
+}
+
+.box .button{
+	width: 180px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    background: rgb(45,108,180);
+    color: white;
+}
+
+.box .button:hover{
+	cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    transition: 0.4s;
+
+}
+
+@media (max-width: 767px){
+	.box .col {
+    	margin: 25px;
+    	width: 420px;
+    	flex-direction: column;
+        align-items: center;
+    }
+    .box {
+    	width: 400px;
+        padding: 10px;
+    }
+    .box .input-o {
+		height: 60px;
+    }
+	.button {
+    	margin-top: 50px;
+    }
+}

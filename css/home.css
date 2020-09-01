@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'holyfatregular';
+    src: url('../assets/fonts/holyfat-webfont.woff2') format('woff2'),
+         url('../assets/fonts/holyfat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+
+.c1{ background-color: #ec9b3b; }
+.c2{ background-color: #ee5487; }
+.c3{ background-color: #f6901a; }
+.c4{ background-color: #82bb30; }
+.c5{ background-color: #4facff; }
+
+
+*, *:before, *:after {
+	margin: 0;
+    padding: 0;
+  	box-sizing: border-box;
+}
+
+section {
+	position: relative;
+    padding: 40px 80px;
+}
+
+body {
+	width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #d69c20, #dbc491,#23a6d5, #2305ab);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes change {
+	0% {
+    	background-position: 10% 50%;
+    }
+	50% {
+    	background-position: 100% 50%;
+    }
+	100% {
+    	background-position: 10% 50%;
+    }
+}
+
+/*==================================================
+=====================   Header  ====================
+==================================================*/
+
+html { overflow-x: hidden; 
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  background: #1b1b1b;
+  height: 75px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: white;
+  margin-top: 5px;
+  padding-left: 60px;
+}
+nav .logo img {
+	max-height: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 150px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 220px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 0;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+
+@media (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    z-index: 99999;
+    width: 101%;
+ 	position: absolute;
+    top: 75px;
+    right: 0;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+/*==================================================
+====================   Projects  ===================
+==================================================*/
+.section-header {
+    margin: 10px 0;
+	text-align: center;
+	font-size: 70px;
+    color: #1b1b1b;
+    font-family: 'holyfatregular', sans-serif;
+    
+}
+
+.projects-section {
+  display: flex;
+  justify-content: center;
+
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.project {
+	position: relative;
+  	background: white;
+  	width: 360px;
+  	display: inline-block;
+  	border-radius: 19px;
+  	text-align: center;
+  	box-shadow: -1px 15px 30px -12px black;
+  	z-index: 9999;
+  	margin: 30px;
+    transition: 0.5s ease;    
+}
+
+ .project:hover {
+	transform: scale(1.1);
+    box-shadow: 5px 20px 35px rgba(0, 0, 0, 0.6);
+}
+
+.card-top {
+  height: 100px;
+  margin-bottom: 25px;
+  padding: 15px 10px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: url('../img/wood.jpg');
+  background-size: cover;
+  font-size: 26px;
+  color: white;
+  line-height: 1;
+}
+
+.card-top a{
+	text-decoration: none;
+    color: black;
+}
+
+.creator {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(45,108,180);
+}
+
+.title {
+	padding: 10px;
+    margin: 0;
+	position: relative;
+  	font-size: 26px;
+  	color: black;
+  	font-weight: 900;
+}
+
+.description {
+  padding: 20px;
+  margin: 10px 0;  
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  align-content: center;
+}
+
+.stat {
+  display: flex;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.info-values {
+   	position: relative;
+    width: 33%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 15px;
+  } 
+  
+.info-values:nth-child(3){
+    width: 200px;
+}
+
+.stat-values {
+    position: relative;
+    font-size: 24px;
+  	width: 33%;
+    padding: 15px 0;
+}
+
+.stat-values:nth-child(3){
+	width: 200px;
+}
+  
+.info-values:nth-child(2) {
+    border: 1px white;
+    border-style: none solid;
+}
+
+.stat-values:nth-child(2) {
+    border: 1px white;
+    border-style: none solid;
+}
+
+.fa {
+	margin-top: 25px;
+}
+
+
+/*==================================================
+====================   Footer  =====================
+==================================================*/
+
+.footer { 
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+	bottom: 0;
+    position: relative;
+    background-color: black;
+}
+
+
+.footer .mark {
+	position: relative;
+    display: flex; 
+    text-align: center;
+    background: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer .mark h3{
+  font-size: 60px;
+  font-weight: 400;
+  font-family: 'holyfatregular';
+  color: rgb(14,154,215);
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.footer .mark span{
+  color: rgb(45,108,180); 
+  font-family: 'holyfatregular';
+}
+
+.copyright {
+	text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1068px){
+	.projects-section{
+    	display: flex;
+    	flex-direction: column;
+        align-items: center;
+    }
+    
+body {
+    background-size: 500% 500%;
+}
+    
+.wrapper {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project {
+  	width: 460px;
+  	margin: 20px;
+}
+
+.card-top {
+  height: 80px;
+  margin-bottom: 25px;
+  padding: 15px 10px;
+  font-size: 28px;
+}
+
+
+.level {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(45,108,180);
+}
+
+.title {
+	padding: 10px;
+    margin: 0;
+	position: relative;
+  	font-size: 26px;
+  	color: black;
+  	font-weight: 900;
+}
+
+.description {
+  padding: 20px;
+  margin: 0;  
+}
+
+}
